@@ -20,11 +20,11 @@ app.get('/start', function(req, res){
 app.get('/webhook_url', function(req, res){
 	console.log("hitting initialize webhook url!!");
     console.log(req);
-    var venmo_response = req.query['venmo_challenge'];
+    var venmo_response = req.query['venmo_challenge'] + "hi";
 
     console.log("venmo_response is.. ", venmo_response);
 	
-    res.send(venmo_response, "stuff");
+    res.send(venmo_response);
 
 });
 app.get('/login', function(req, res){
