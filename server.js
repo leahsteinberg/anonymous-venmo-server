@@ -83,7 +83,7 @@ get_user = function(target_string, original_sender, message, amount, tag){
 					console.log("\nuser id should be:::", body['data']['username'], body['data']['id']);
 					target_id = body['data']['id'];
 					console.log("sending money to target.");
-					send_money(target_id, message, amount, 'private', tag);
+					send_money(target_id, message, amount, 'public', tag);
 				}
 				else{
 					console.log("sending back to original");
